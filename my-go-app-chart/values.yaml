@@ -1,0 +1,10 @@
+replicaCount: 1
+
+image:
+  repository: rajendra95/my-go-app
+  pullPolicy: Always
+  tag: "v1.1.0"
+
+service:
+  type: ClusterIP
+  port: 8080
