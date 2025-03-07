@@ -3,7 +3,7 @@ entries:
   my-go-app-chart:
   - apiVersion: v2
     appVersion: 1.1.0
-    created: "2025-03-07T20:13:10.92793233+05:30"
+    created: "2025-03-07T20:22:57.678645692+05:30"
     description: A Helm chart for my Go application
     digest: 18b8d8a1af38ba95eadfb891e0297f025361d06762b7026b1813d48460f82195
     name: my-go-app-chart
@@ -11,4 +11,4 @@ entries:
     urls:
     - my-go-app-chart-0.1.1.tgz
     version: 0.1.1
-generated: "2025-03-07T20:13:10.927736136+05:30"
+generated: "2025-03-07T20:22:57.678234241+05:30"

@@ -50,13 +50,3 @@ app.kubernetes.io/name: {{ include "my-go-app-chart.name" . }}
 app.kubernetes.io/instance: {{ .Release.Name }}
 {{- end }}
 
-{{/*
-Create the name of the service account to use
-*/}}
-{{- define "my-go-app-chart.serviceAccountName" -}}
-{{- if .Values.serviceAccount.create }}
-{{- default (include "my-go-app-chart.fullname" .) .Values.serviceAccount.name }}
-{{- else }}
-{{- default "default" .Values.serviceAccount.name }}
-{{- end }}
-{{- end }}
