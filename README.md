@@ -41,11 +41,15 @@ Use this URL with helm repo add:
 
 ``` 
 helm repo add my-gh-pages-repo https://rajendragosavi.github.io/Web-Server/
+
 helm repo update
-helm push my-go-app-chart-0.1.0.tgz oci://<your-registry>/<your-repo>/charts  // Push Helm Chart to oci repo
+
+helm push my-go-app-chart-0.1.0.tgz oci://<your-registry>/<your-repo>/charts  // Ifg you want to push Helm Chart to oci repo
+
 helm install my-go-app-release oci://<your-registry>/<your-repo>/charts/my-go-app-chart --version 0.1.0 --set image.repository=<your-dockerhub-username>/my-go-app --set image.tag=latest  // Pull chart from oci repo.
 
 helm install my-go-app-release my-gh-pages-repo/my-go-app-chart --set image.repository=<your-dockerhub-username>/my-go-app --set image.tag=latest
+
 ```
 
 
@@ -55,16 +59,20 @@ helm install my-go-app-release my-gh-pages-repo/my-go-app-chart --set image.repo
 
 ## How to use chart
 
+```
 helm repo add my-git-repo https://raw.githubusercontent.com/rajendragosavi/Web-Server/master/my-go-app-chart
+```
 
 
+```
 helm repo update
+```
 
-
+```
 helm install my-go-app-release my-git-repo/my-go-app-chart \
   --set image.repository=<your-dockerhub-username>/my-go-app \
   --set image.tag=latest
-
+```
 
 
 
