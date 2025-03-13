@@ -2,5 +2,12 @@ apiVersion: v2
 name: my-go-app-chart
 description: A Helm chart for my Go application
 type: application
-version: 0.1.1
-appVersion: "1.1.0"
+version: 0.1.2
+appVersion: "1.2.0"
+home: https://github.com/rajendragosavi/Web-Server
+sources:
+- https://github.com/rajendragosavi/Web-Server
+maintainers:
+- name: Rajendra Gosavi
+  email: raje.g.995@gmail.com
+icon: https://your-github-repo-url/logo.png # Update once we generate a logo
