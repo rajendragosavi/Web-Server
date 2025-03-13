@@ -3,7 +3,7 @@ replicaCount: 1
 image:
   repository: rajendra95/my-go-app
   pullPolicy: Always
-  tag: "v1.2.0"
+  tag: "v2.0.0"
 
 service:
   type: ClusterIP
